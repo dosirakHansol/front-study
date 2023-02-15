@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #container{
+            margin: auto;
+            width: 500px;
+            /* height: 500vh; */
+            height: 3000px;
+            /* padding: 1000px 0 1000px 0; */
+            background-color: grey;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        #container>*{
+            margin: auto;
+            width: 150px;
+            border: 1px solid red;
+            text-align: center;
+        }
+        #mySticky{
+            position: sticky;
+            bottom: 0;
+            /* top: 0; */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="1">요소1</div>
+        <div id="2">요소2</div>
+        <div id="3">요소3</div>
+        <div id="4">요소4</div>
+        <div id="5">요소5</div>
+        <section id="mySticky">
+            <div>결제버튼</div>
+            <div>금액</div>
+        </section>
+    </div>
+
+    <!-- 
+        현재 회사에서는 sticky를 적용하려고하니, 안됨.
+        예제와 테스트에선 잘 진행됨...
+            - 일단 stackoverflow나 다른 사이트들에선 하단에 고정하려면 sticky 할 요소에 정해진 위치값이 있어야 한다고 함
+            - 부모요소의 크기가 고정되어야 한다는 말도있음
+        무신사에서는 fixed 사용하고있음.
+        어차피 하단고정이니 fixed를 써도 무방할거같음.
+     -->
+</body>
+</html>

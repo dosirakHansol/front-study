@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My-Sticky</title>
+
+    <style>
+        .block {
+            background: pink;
+            display:inline-flex;
+            vertical-align:top;
+            height: 200px;
+            max-width:100px;
+            flex-direction:column;
+            margin:100vh 0;
+        }
+
+        .e1 {
+            position: sticky;
+            top: 0;
+        }
+        .e2 {
+            margin-top:auto;
+            position: sticky;
+            top: 0;
+        }
+        .e3 {
+            position: sticky;
+            top: 20px;
+        }
+        .e4 {
+            position: sticky;
+            bottom: 0;
+            margin:auto;
+        }
+        .e5 {
+            position: sticky;
+            bottom: 0;
+            top:0;
+            margin:auto;
+        }
+        .e5 {
+            position: sticky;
+            bottom: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="block">
+        <div class="e1">Top sticky</div>
+    </div>
+    <div class="block">
+        <div class="e2">Top sticky at bottom (nothing will happen :( )</div>
+    </div>
+    <div class="block">
+        <div class="e3">Top sticky at 10px</div>
+    </div>
+    <div class="block">
+        <div class="e4">bottom sticky in the middle</div>
+    </div>
+    <div class="block">
+        <div class="e5">top/bottom sticky in the middle</div>
+    </div>
+    <div class="block">
+        <div class="e6">bottom sticky at the top (nothing will happen :( )</div>
+    </div>
+</body>
+</html>
