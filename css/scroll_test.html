@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Scroll Test</title>
+
+    <style>
+        html, body{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            /* height: 3000px; */
+            height: 896px;
+            background-color: grey;
+            overflow: visible;
+        }
+        #container{
+            width: 100%;
+            height: 100%;
+        }
+        #header{
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            top: 0;
+            background-color: green;
+            margin: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        #footer{
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            bottom: 0;
+            background-color: blue;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .yoso{
+            overflow-x: hidden;
+            width: 50%; height: 1000px;background-color: black;
+            margin: auto;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        #last-yoso{
+            padding-bottom: 100px;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header"></div>
+        <div class="yoso"></div>
+        <div class="yoso">
+    
+        </div>
+        <div id="last-yoso" class="yoso"></div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
