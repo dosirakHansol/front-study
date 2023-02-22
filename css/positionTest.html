@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        body, html{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 100%;
+        }
+        section{
+            border: 1px solid green;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            position: relative;
+            padding-bottom: 80px;
+        }
+        section > div {
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        #target{
+            width: 90%;
+            border: 1px solid red;
+            box-sizing: border-box;
+            background-color: grey;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%,0);
+            /* margin-left: 15px;
+            margin-right: 15px; */
+        }
+        #target>div{
+            border: 3px solid purple;
+            box-sizing: border-box;
+            width: 40%;
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+    </style>
+
+<body>
+
+    <section>
+
+        <div>
+            <img src="./resources/testJPG.jpg" alt="">
+            <div id="target">
+                <div>Trending Now</div>
+                <p>
+                    핫한 매장엔 꼭 있다. <br>
+                    시선을 압도하는 아트퍼니처
+                </p>
+                <P>2023-02-22</P>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <section></section>
+    <section></section>
+    
+</body>
+</html>
