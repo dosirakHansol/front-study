@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipster test</title>
+
+    <!-- <link rel="stylesheet" href="demo.css"> -->
+    <!-- <link rel="stylesheet" href="dist/jquery.flipster.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.flipster/1.1.5/jquery.flipster.min.css" integrity="sha512-V+/5MWGpw2+bCdSIsyanskFA5W7m7tQxOucGv7STlkQeXlaj2YHg26U3UCq60uStT2yCWigdU7zdNSK7xKHImQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <script src="jquery.min.js"></script> -->
+    <!-- <script src="dist/jquery.flipster.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.flipster/1.1.5/jquery.flipster.min.js" integrity="sha512-YPskov+TTZvojhg9iWYQKa6iRPRm8hko8GBbdV8A8KKMTwp84+jm2K+soYNx3Wf6qQhxb+kn2sjpMZwkWxnD/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <article id="demo-carousel" class="demo">
+
+        <!-- <h2>Flipster Carousel</h2> -->
+    
+        <section id="carousel">
+            <ul class="flip-items">
+                <li data-flip-title="Red">
+                    <img src="img/text1.gif">
+                    <p>Hello flipster!!!</p>
+                </li>
+                <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                    <img src="img/text2.gif">
+                 </li>
+                <li data-flip-title="Deep Lilac" data-flip-category="Purples">
+                    <img src="img/text3.gif">
+                </li>
+                <li data-flip-title="Daisy Bush" data-flip-category="Purples">
+                    <img src="img/text4.gif">
+                </li>
+                <li data-flip-title="Cerulean Blue" data-flip-category="Blues">
+                    <img src="img/text5.gif">
+                </li>
+                <li data-flip-title="Dodger Blue" data-flip-category="Blues">
+                    <img src="img/text6.gif">
+                </li>
+                <li data-flip-title="Cyan" data-flip-category="Blues">
+                    <img src="img/text7.gif">
+                </li>
+                <li data-flip-title="Robin's Egg" data-flip-category="Blues">
+                    <img src="img/text8.gif">
+                </li>
+                <li data-flip-title="Deep Sea" data-flip-category="Greens">
+                    <img src="img/text9.gif">
+                </li>
+                <li data-flip-title="Apple" data-flip-category="Greens">
+                    <img src="img/text10.gif">
+                </li>
+                <li data-flip-title="Pistachio" data-flip-category="Greens">
+                    <img src="img/text11.gif">
+                </li>
+                <li data-flip-title="Pear" data-flip-category="Greens">
+                    <img src="img/text12.gif">
+                </li>
+                <li data-flip-title="Bright Sun" data-flip-category="Yellows">
+                    <img src="img/text13.gif">
+                </li>
+                <li data-flip-title="Mikado" data-flip-category="Yellows">
+                    <img src="img/text14.gif">
+                </li>
+            </ul>
+        </section>
+
+    <!-- 
+        제이쿼리 플립스터 예제
+        - 회사 페이지에 적용 할 땐?
+        - 일단 상대경로 지정하여 사용
+        - jqeury는 cdn 사용으로 충돌 방지코드 작성하여 진행...
+            - https://chichi-story.tistory.com/33 참고
+            - npm 패키지에 있는 jquery와 구분지어서 사용...?
+            - 해당 jquery가 로드되면 렌더링 되도록...!!
+        - jQuery v1.11.3 
+            - <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            - 근데 최신버전 사용해도 문제가없네...?
+        - https://cdnjs.com/libraries/jquery.flipster //flipster CDN!!
+            - min.js, min.css만 있음댐
+        
+     -->
+    
+    <script>
+        var carousel = $("#carousel").flipster({
+            style: 'carousel',
+            spacing: -0.5,
+            nav: false,
+            buttons:   false,
+            loop: false,            //마지막,처음거에서 넘길시 지정하는거, 몬말알?
+            start: 'center',        //시작할 페이지
+            itemContainer: 'ul',    //컨테이너 지정도 가능!
+            itemSelector: 'li',     //슬라이드 할 요소도 지정 가능!
+            
+        });
+    </script>
+</body>
+</html>
